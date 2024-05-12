@@ -1,0 +1,58 @@
+@import "../colors.scss";
+@mixin fColor($c) {
+  color: $c;
+}
+section {
+  background-color: $Very-Dark-Blue-bg;
+  min-height: 100vh;
+}
+.container {
+  padding-block: 1em;
+}
+
+.taskInfoContent{
+  background-color:$Dark-Card;
+  border-radius: 8px;
+  cursor: pointer;
+  transform-origin: all; 
+  // &:hover{
+  //   transform: rotate(360deg);
+  //   transition: all 0.3s;
+  //   background: #000;
+  //   display: none;
+  //   }
+}
+.col-md-6 div {
+ 
+  border-radius: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 0.5em;
+}
+.sh {
+  @include fColor(#fff);
+  font-size: 0.8em;
+}
+.fs-t {
+  @include  fColor(#fff);
+  font-size: 1.2em;
+  text-shadow: 3px 3px 3px #000;
+}
+.date p {
+  color: $Light-Grayish-Blue;
+  font-size: 0.9em;
+}
+.btn-d {
+  background-color: $Dark-Grayish-Blue;
+  border: none;
+  margin: 3px;
+  border-radius: 3px;
+  width: 33.33%;
+} 
+
+
+/*
+card
+(1)  هتتقلب وتعرض تفاصيل الموظف الي هيعمل
+(2)  اليوزر يتحكم في طهور واختفاء البيانات
+*/

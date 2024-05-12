@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'toDoListWithTimeTracker'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('toDoListWithTimeTracker');
+    expect(app).toEqual('toDoListWithTimeTracker');
   });
 
   it('should render title', () => {

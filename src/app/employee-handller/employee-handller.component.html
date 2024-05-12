@@ -1,0 +1,113 @@
+<section class="d-flex justify-content-center align-items-center">
+  <div class="container">
+    <form
+      [formGroup]="employeeFormGroup"
+      (ngSubmit)="submitForm(employeeFormGroup)"
+      class="row justify-content-around"
+    >
+      <div class="left col-md-4">
+        <div class="name my-3">
+          <label>name</label>
+          <input
+            class="form-control"
+            formControlName="employeeName"
+            type="text"
+            name="employeeName"
+          />
+          <p
+            *ngIf="employeeFormGroup.get('employeeName')?.errors&&employeeFormGroup.get('employeeName')?.touched"
+            class="error"
+          >
+            your Name Must be bigger than 5 and littel then 15
+          </p>
+        </div>
+        <div class="mail my-3">
+          <label>email</label>
+          <input
+            value=""
+            class="form-control"
+            formControlName="email"
+            type="text"
+            name="email"
+          />
+          <p *ngIf="employeeFormGroup.get('email')?.errors && this.employeeFormGroup.get('email')?.touched" class="error">
+            please enter a valid Mail
+          </p>
+        </div>
+        <div class="category my-3">
+          <label>category</label>
+          <select formControlName="category" class="form-select" name="category" id="category">
+            <option value="">category</option>
+            <option value="uiux">uiux</option>
+            <option value="frontEnd">front End</option>
+            <option value="backEnd">back End</option>
+            <option value="dataAnalysis">data Analysis</option>
+          </select>
+        </div>
+        <div class="level my-3">
+          <label>level</label>
+          <select formControlName="level" class="form-select" name="level" id="level">
+            <option value="">level</option>
+            <option value="junior">junior</option>
+            <option value="intermediat">intermediat</option>
+            <option value="senior">senior</option>
+          </select>
+        </div>
+        <div class="img my-3">
+          <label>img</label>
+          <input
+            value=""
+            class="form-control"
+            formControlName="img"
+            type="url"
+            name="img"
+          />
+        </div>
+        <div class="AddEmployee">
+          <button
+            class="btn mt-3"
+            type="submit"
+            [disabled]="employeeFormGroup.status == 'INVALID'"
+          >
+          Add Employer
+        </button>
+        </div>
+      </div>
+      <!-- <div class="right col-8 col-md-4">
+          
+          <div class="education">
+            <label>education</label>
+            <input
+              value=""
+              class="form-control"
+              formControlName="education"
+              type="text"
+              name="education"
+            />
+          </div>
+
+          <div class="personalWebsite">
+            <label>personalWebsite</label>
+            <input
+              value=""
+              class="form-control"
+              formControlName="personalWebsite"
+              type="text"
+              name="personalWebsite"
+            />
+          </div>
+          <div class="salary">
+            <label>salary</label>
+            <input
+              value=""
+              class="form-control"
+              formControlName="salary"
+              type="text"
+              name="salary"
+            />
+          </div>
+          
+        </div> -->
+    </form>
+  </div>
+</section>

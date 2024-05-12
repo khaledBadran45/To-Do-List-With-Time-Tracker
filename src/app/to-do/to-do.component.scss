@@ -1,0 +1,128 @@
+@import "../colors.scss";
+
+.SharingP{
+  background-color: rgb(175, 149, 196);
+  position: absolute;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.Tasks {
+  @extend .SharingP;
+  position: absolute;
+  right: 0;
+}
+.employee {
+  @extend .SharingP;
+  left: 0%;
+}
+.main {
+  background-image: url("../../assets/images/bg-desktop-dark.jpg");
+  background-size: cover;
+  height: 56vh;
+}
+.container {
+  width: 100%;
+}
+.bg-icon {
+  background-image: url("../../assets/images/icon-sun.svg");
+  background-size: cover;
+}
+.w-30 {
+  width: 30em;
+}
+.pb {
+  padding-block: 0.7em;
+}
+.centerv {
+  padding-top: 5em;
+}
+.Tasks-container {
+  border: 1px solid #393a4c;
+  border-radius: 3px;
+}
+.bg-color-Dark-Blue {
+  text-transform: capitalize;
+  background-color: $Very-Dark-Grayish-Blue;
+  outline: none;
+  border: 0;
+  color: $Light-Grayish-Blue;
+  :hover {
+    color: $Light-Grayish-Blue-hover;
+  }
+}
+.text-p {
+  padding-left: 1rem;
+  color: $Light-Grayish-Blue;
+}
+a {
+  text-decoration: none;
+}
+.Linear-bg {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.Linear-Border {
+  position: relative;
+  width: 27px;
+  height: 25px;
+  border: 1.8px solid transparent;
+  background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%))
+    border-box;
+  border-radius: 50%;
+  img {
+    position: absolute;
+    left: 0px;
+    background: #393a4c border-box;
+    border-radius: 50px;
+    padding: 7px;
+  }
+}
+label {
+  color: $Light-Grayish-Blue;
+}
+.required {
+  border: 1px solid red;
+}
+.b {
+  border-radius: 5px;
+}
+.border-bottom {
+  border-color: #474747 !important;
+  padding: 5px;
+}
+.bg-check {
+  border-radius: 50%;
+  width: 5%;
+  text-align: center;
+  background-color: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.mr {
+  margin-right: 9px;
+}
+
+.ml {
+  margin-left: 9px;
+}
+.br-3 {
+  border-radius: 5px;
+}
+button.m-1.btn {
+  color: $Dark-Grayish-Blue;
+  :hover {
+    color: aliceblue;
+  }
+  :active {
+    border: 0px;
+  }
+}
+
+.fs {
+  font-size: 12px;
+}
+.px-level {
+  padding-inline: 1.1em;
+}
+.px-category {
+  padding-inline: 0.8em;
+}
+
+// on click

@@ -1,0 +1,37 @@
+@import "./../colors.scss";
+
+label,
+p {
+  display: block;
+  color: aliceblue;
+}
+section {
+  min-height: 100vh;
+  background-color: $Very-Dark-Blue-bg;
+}
+input,
+select {
+  background-color: $Dark-Card;
+  color: aliceblue !important;
+  border: none;
+  &:focus {
+    background-color: $Dark-Card;
+    box-shadow: none;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+.AddEmployee button {
+  transition: all 0.5s;
+  color: #fff;
+  background-color: $Very-Dark-Blue-bg !important;
+  border: 1px solid $Very-Dark-Grayish-Blue;
+  &:hover {
+    background-color: $Dark-Card !important;
+    transform: translateX(10%);
+  }
+}

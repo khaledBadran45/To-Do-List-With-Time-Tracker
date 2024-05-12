@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { employeesFilter } from './employee-handller/employees_filter';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'toDoListWithTimeTracker';
+export class AppComponent implements OnInit {
+  constructor(){}
+  ngOnInit(): void {
+
+  }
+  
+  
 }
